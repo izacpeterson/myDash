@@ -77,16 +77,19 @@ img {
   justify-content: center;
   margin-left: 10px;
 }
-#googleCard form * {
+#googleCard form input,
+button {
   border: solid 2px white;
 
   font-size: 24px;
   height: 100%;
   padding: 5px;
+  width: 100%;
 }
 #googleCard button {
   background: none;
   color: white;
+  width: 30%;
 }
 @media only screen and (max-width: 600px) {
   body {
