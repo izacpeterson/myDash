@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+html {
+  background-color: #252525;
+  color: white;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+body {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+.card {
+  /* border: solid 1px black; */
+  /* min-width: 500px;
+  min-height: 200px;  */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  /* box-shadow: 5px 5px 5px #e6e6e6, -5px -5px 5px #f5f5f5; */
+  box-shadow: 0 0 10px #131313;
+  /* border-radius: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: 400px;
+  /* width: 100%; */
+}
+#quicklinks a {
+  color: #ffffff;
+  font-size: 32px;
+  text-decoration: none;
+}
+#welcomecard {
+  grid-column: 1/3;
+  background-color: #7ea03a;
+}
+#dateTimeCard {
+  background-color: #a05f3a;
+}
+#weatherCard {
+  background-color: #3a69a0;
+}
+#apodCard {
+  background-color: #3aa09b;
+}
+#quicklinks {
+  background-color: #a03aa0;
+}
+#googleCard {
+  background-color: #a03a3a;
+  flex-direction: row;
+  font-size: 24px;
+}
+#googleCard form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+#googleCard form * {
+  border: solid 2px white;
+
+  font-size: 24px;
+  height: 100%;
+  padding: 5px;
+}
+#googleCard button {
+  background: none;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/53c6eecb7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <div class="card" id="welcomecard">
+      <h1>Hello, Izac</h1>
+    </div>
+    <div class="card" id="dateTimeCard">
+      <h2 id="date">Date</h2>
+      <h2 id="time">Time</h2>
+    </div>
+    <div class="card" id="googleCard">
+      <!-- <h3>Google</h3> -->
+      <form action="https://google.com/search">
+        <input type="text" name="q" placeholder="Google" />
+        <button>Search</button>
+      </form>
+    </div>
+    <div class="card" id="weatherCard">
+      <h2>Weather</h2>
+      <h3 id="temp"></h3>
+      <h3 id="condition"></h3>
+      <h2>Forecast</h2>
+      <h3>Today</h3>
+      <h3 id="highToday"></h3>
+      <h3 id="lowToday"></h3>
+    </div>
+    <div class="card" id="apodCard">
+      <h2>NASA APOD</h2>
+      <h3 id="apodtitle"></h3>
+      <img src="" alt="" id="apodimg" />
+    </div>
+    <div class="card" id="quicklinks">
+      <a href="https://www.youtube.com/"
+        ><i class="fab fa-youtube"></i> YouTube</a
+      >
+      <a href="https://github.com/"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"
+        ><i class="fas fa-envelope"> </i> Gmail</a
+      >
+    </div>
+  </body>
+</html>
